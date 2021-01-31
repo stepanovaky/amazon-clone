@@ -1,0 +1,111 @@
+[debug] [2021-01-31T19:10:40.236Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:10:40.238Z] Command:       D:\Program Files\node.exe C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-31T19:10:40.238Z] CLI Version:   9.2.2
+[debug] [2021-01-31T19:10:40.238Z] Platform:      win32
+[debug] [2021-01-31T19:10:40.238Z] Node Version:  v15.3.0
+[debug] [2021-01-31T19:10:40.239Z] Time:          Sun Jan 31 2021 14:10:40 GMT-0500 (Eastern Standard Time)
+[debug] [2021-01-31T19:10:40.239Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:10:40.239Z] 
+[debug] [2021-01-31T19:10:40.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-31T19:10:40.283Z] > authorizing via signed-in user
+[debug] [2021-01-31T19:10:40.283Z] [iam] checking project clone-fa232 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-31T19:10:40.286Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-31T19:10:40.286Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:10:40.474Z] <<< HTTP RESPONSE 200 {"date":"Sun, 31 Jan 2021 19:10:40 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:40.485Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fa232:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-31T19:10:40.743Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:10:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=133","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:40.744Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-fa232/serviceAccounts/clone-fa232@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-01-31T19:10:41.011Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:10:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:41.012Z] > refreshing access token with scopes: []
+[debug] [2021-01-31T19:10:41.012Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:10:41.140Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 31 Jan 2021 19:10:41 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:41.150Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 [none]
+[debug] [2021-01-31T19:10:41.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 200
+[debug] [2021-01-31T19:10:41.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 {"projectId":"clone-fa232","projectNumber":"575768935931","displayName":"amazon-clone","name":"projects/clone-fa232","resources":{"hostingSite":"clone-fa232","realtimeDatabaseInstance":"clone-fa232-default-rtdb","storageBucket":"clone-fa232.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-01-31T19:10:41.478Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:278:15)
+    at validateString (node:internal/validators:123:11)
+    at Object.join (node:path:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-31T19:10:54.154Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:10:54.156Z] Command:       D:\Program Files\node.exe C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-31T19:10:54.157Z] CLI Version:   9.2.2
+[debug] [2021-01-31T19:10:54.157Z] Platform:      win32
+[debug] [2021-01-31T19:10:54.157Z] Node Version:  v15.3.0
+[debug] [2021-01-31T19:10:54.158Z] Time:          Sun Jan 31 2021 14:10:54 GMT-0500 (Eastern Standard Time)
+[debug] [2021-01-31T19:10:54.158Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:10:54.158Z] 
+[debug] [2021-01-31T19:10:54.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-31T19:10:54.166Z] > authorizing via signed-in user
+[debug] [2021-01-31T19:10:54.166Z] [iam] checking project clone-fa232 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-31T19:10:54.169Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-31T19:10:54.169Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:10:54.302Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 31 Jan 2021 19:10:54 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:54.318Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fa232:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-31T19:10:54.478Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:10:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=43","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:54.480Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-fa232/serviceAccounts/clone-fa232@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-01-31T19:10:54.685Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:10:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:54.688Z] > refreshing access token with scopes: []
+[debug] [2021-01-31T19:10:54.689Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:10:54.874Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 31 Jan 2021 19:10:54 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:10:54.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 [none]
+[debug] [2021-01-31T19:10:55.106Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 200
+[debug] [2021-01-31T19:10:55.106Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 {"projectId":"clone-fa232","projectNumber":"575768935931","displayName":"amazon-clone","name":"projects/clone-fa232","resources":{"hostingSite":"clone-fa232","realtimeDatabaseInstance":"clone-fa232-default-rtdb","storageBucket":"clone-fa232.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-01-31T19:10:55.218Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:278:15)
+    at validateString (node:internal/validators:123:11)
+    at Object.join (node:path:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-31T19:12:34.118Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:12:34.121Z] Command:       D:\Program Files\node.exe C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-31T19:12:34.121Z] CLI Version:   9.2.2
+[debug] [2021-01-31T19:12:34.121Z] Platform:      win32
+[debug] [2021-01-31T19:12:34.121Z] Node Version:  v15.3.0
+[debug] [2021-01-31T19:12:34.122Z] Time:          Sun Jan 31 2021 14:12:34 GMT-0500 (Eastern Standard Time)
+[debug] [2021-01-31T19:12:34.122Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T19:12:34.123Z] 
+[debug] [2021-01-31T19:12:34.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-31T19:12:34.130Z] > authorizing via signed-in user
+[debug] [2021-01-31T19:12:34.131Z] [iam] checking project clone-fa232 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-31T19:12:34.133Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-31T19:12:34.133Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:12:34.312Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 31 Jan 2021 19:12:34 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:12:34.366Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-fa232:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-31T19:12:34.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:12:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=136","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:12:34.572Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/clone-fa232/serviceAccounts/clone-fa232@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-01-31T19:12:34.792Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 19:12:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:12:34.793Z] > refreshing access token with scopes: []
+[debug] [2021-01-31T19:12:34.793Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T19:12:34.918Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 31 Jan 2021 19:12:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T19:12:34.978Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 [none]
+[debug] [2021-01-31T19:12:35.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 200
+[debug] [2021-01-31T19:12:35.202Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-fa232 {"projectId":"clone-fa232","projectNumber":"575768935931","displayName":"amazon-clone","name":"projects/clone-fa232","resources":{"hostingSite":"clone-fa232","realtimeDatabaseInstance":"clone-fa232-default-rtdb","storageBucket":"clone-fa232.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-01-31T19:12:35.316Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:278:15)
+    at validateString (node:internal/validators:123:11)
+    at Object.join (node:path:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\psyck\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
